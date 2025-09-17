@@ -124,5 +124,8 @@ alert("answer the last two onto the cookie monster");
 
 let three = ++one;// ?
 let four = two++;// ?
+
+alert(one);
+alert(two);
 }
 
