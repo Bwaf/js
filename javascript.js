@@ -92,7 +92,9 @@ cookie *= 2;
 alert(cookie);
 
 let counter = 2;
-counter++;
-alert(counter);
+counter++; // same as counter = counter + 1;
+alert(counter); //3
+counter--; // same as counter = counter - 1;
+alert(counter); //1
 }
 
