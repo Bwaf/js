@@ -22,3 +22,6 @@ alert( `hello ${name}` ); // ?
 
 let age = prompt('Hw old are you?', 100);
 alert(`you are ${age} years old!`);
+
+let isBoss = confirm('Are you the boss?');
+alert(isBoss);
