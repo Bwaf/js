@@ -96,5 +96,10 @@ counter++; // same as counter = counter + 1;
 alert(counter); //3
 counter--; // same as counter = counter - 1;
 alert(counter); //1
+
+let cookieMonster = ++counter;
+alert(cookieMonster);
+cookieMonster = counter++;\
+alert(cookieMonster);
 }
 
