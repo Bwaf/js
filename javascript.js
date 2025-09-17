@@ -1,3 +1,5 @@
+'use strict'
+
 alert('Hello world!');
 
 let user = 'john';
