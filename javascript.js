@@ -62,5 +62,8 @@ x = -x;
 alert(x);
 alert(y - x);
 alert(8 ** 8);
+
+let s = "my" + "string";
+alert(s);
 }
 
