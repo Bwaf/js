@@ -33,5 +33,6 @@ function day2() {
 
 };
 
-let userName = prompt('What do you want to be called?', 'John');
+let userName = prompt('What do you want to be called?', John);
+alert(userName);
 alert(`Hello ${userName}!`);
