@@ -27,11 +27,16 @@ alert(`you are ${age} years old!`);
 };
 
 function day2() {
-// let isBoss = confirm('Are you the boss?');
-// alert(isBoss);
-
-
-};
+let isBoss = confirm('Are you the boss?');
+alert(isBoss);
 
 let userName = prompt("What do you want to be called?", "John");
 alert(`Hello ${userName}!`);
+
+let value = true;
+alert(typeof value);
+
+value = String(value);
+alert(typeof value);
+};
+
