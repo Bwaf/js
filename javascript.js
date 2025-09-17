@@ -65,5 +65,24 @@ alert(8 ** 8);
 
 let s = "my" + "string";
 alert(s);
+
+alert(2 + 2 + "1"); //would be 41
+
+alert( +true );
+alert( +"" );
+
+let apple = "2";
+let orange = "3";
+alert( apple + orange );
+alert( +apple + +orange );
+
+let a, b, c;
+
+a = b = c = 2 + 2;
+
+alert(a);
+alert(b);
+alert(c);
+//all should = 4
 }
 
