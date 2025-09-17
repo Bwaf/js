@@ -123,8 +123,8 @@ let superkellen = 1;
 
 alert("answer the last two onto the cookie monster");
 
-let logan = ++paradox;// ?
-let fish = superkellen++;// ?
+let logan = ++paradox;//2
+let fish = superkellen++;//1
 
 alert(logan);
 alert(fish);
