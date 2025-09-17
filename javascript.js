@@ -13,7 +13,4 @@ let ourPlanet = 'earth';
 
 let name = 'fish';
 
-alert(`hello, ${name}!`);
-
-let isGreater = 4 > 1;
-alert( isGreater );
+alert(`hello, ${name}!`);a
