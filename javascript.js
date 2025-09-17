@@ -108,5 +108,21 @@ counter++;
 alert(counter);//2
 alert(++counter);//3
 alert(counter++);//3
+
+counter = 1;
+alert(2 * ++counter);//4
+
+counter = 1;
+alert(2 * counter++);//2 because counter++ returns "old" value
+
+let funny = (1 + 2, 3 + 4);
+alert(funny);// 7 since 1+2 was thrown away and replaced with 3+4
+
+let one = 1, two = 1;
+
+alert('answer the last two onto the cookie monster goble your cookies up so fast that super will paradox and paradox will logan furry');
+
+let three = ++one;// ?
+let four = two++;// ?
 }
 
