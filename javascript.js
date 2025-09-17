@@ -90,5 +90,9 @@ cookie += 5;
 cookie *= 2;
 //equals 14
 alert(cookie);
+
+let counter = 2;
+counter++;
+alert(counter);
 }
 
