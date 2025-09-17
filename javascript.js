@@ -95,11 +95,18 @@ let counter = 2;
 counter++; // same as counter = counter + 1;
 alert(counter); //3
 counter--; // same as counter = counter - 1;
-alert(counter); //1
+alert(counter); //2
 
 let cookieMonster = ++counter;
 alert(cookieMonster);
-cookieMonster = counter++;\
+cookieMonster = counter++;
 alert(cookieMonster);
+
+counter = 0;
+counter++;
+++counter;
+alert(counter);//2
+alert(++counter);//3
+alert(counter++);//3
 }
 
