@@ -18,3 +18,6 @@ const AGE = someCode(BIRTHDAY);
 let name = 'fish';
 
 alert(`hello, ${name}!`);
+
+let isGreater = 4 > 1;
+alert( isGreater );
