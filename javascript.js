@@ -84,5 +84,10 @@ alert(a);
 alert(b);
 alert(c);
 //all should = 4
+
+let cookie = 2;
+cookie += 5;
+cookie *= 2;
+//equals 14
 }
 
