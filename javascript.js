@@ -1,7 +1,7 @@
 'use strict'
 
 
-function day1() {
+function hour1() {
 alert('Hello world!');
 
 let user = 'john';
@@ -26,7 +26,7 @@ let age = prompt('Hw old are you?', 100);
 alert(`you are ${age} years old!`);
 }
 
-function day2() {
+function hour2() {
 let isBoss = confirm('Are you the boss?');
 alert(isBoss);
 
@@ -55,7 +55,7 @@ alert( Boolean("hello") ); // true
 alert( Boolean("") ); // false
 }
 
-function day3() {
+function hour3() {
 
 }
 
