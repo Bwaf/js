@@ -118,14 +118,15 @@ alert(2 * counter++);//2 because counter++ returns "old" value
 let funny = (1 + 2, 3 + 4);
 alert(funny);// 7 since 1+2 was thrown away and replaced with 3+4
 
-let one = 1, two = 1;
+let paradox = 1;
+let superkellen = 1;
 
 alert("answer the last two onto the cookie monster");
 
-let three = ++one;// ?
-let four = two++;// ?
+let logan = ++paradox;// ?
+let fish = superkellen++;// ?
 
-alert(one);
-alert(two);
+alert(logan);
+alert(fish);
 }
 
