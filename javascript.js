@@ -120,7 +120,7 @@ alert(funny);// 7 since 1+2 was thrown away and replaced with 3+4
 
 let one = 1, two = 1;
 
-alert('answer the last two onto the cookie monster goble your cookies up so fast that super will paradox and paradox will logan furry');
+alert("answer the last two onto the cookie monster");
 
 let three = ++one;// ?
 let four = two++;// ?
