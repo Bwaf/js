@@ -19,3 +19,6 @@ alert( `hello ${1}` ); // ?
 alert( `hello ${"name"}` ); // ?
 
 alert( `hello ${name}` ); // ?
+
+let age = prompt('Hw old are you?', 100);
+alert(`you are ${age} years old!`);
