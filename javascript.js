@@ -9,12 +9,6 @@ alert(admin);
 
 let ourPlanet = 'earth';
 
-let user;
-
-const BIRTHDAY = '18.04.1982';
-
-const AGE = someCode(BIRTHDAY);
-
 let name = 'fish';
 
 alert(`hello, ${name}!`);
