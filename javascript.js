@@ -10,7 +10,12 @@ admin = user;
 alert(admin);
 
 let ourPlanet = 'earth';
-
 let name = 'fish';
 
-alert(`hello, ${name}!`);a
+alert(`hello, ${name}!`);
+
+alert( `hello ${1}` ); // ?
+
+alert( `hello ${"name"}` ); // ?
+
+alert( `hello ${name}` ); // ?
