@@ -89,5 +89,6 @@ let cookie = 2;
 cookie += 5;
 cookie *= 2;
 //equals 14
+alert(cookie);
 }
 
