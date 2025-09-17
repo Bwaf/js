@@ -13,5 +13,5 @@ let name = 'fish';
 
 alert(`hello, ${name}!`);
 
-let isGreater = 4 > 1;
-alert( isGreater );
+// let isGreater = 4 > 1;
+// alert( isGreater );
