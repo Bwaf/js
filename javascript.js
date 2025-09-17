@@ -24,7 +24,7 @@ alert( `hello ${name}` ); // ?
 
 let age = prompt('Hw old are you?', 100);
 alert(`you are ${age} years old!`);
-};
+}
 
 function day2() {
 let isBoss = confirm('Are you the boss?');
@@ -48,5 +48,14 @@ alert(typeof num); // number
 
 let monkey = ("cookie monster");
 alert(monkey);
-};
+
+alert( Boolean(1) ); // true
+alert( Boolean(0) ); // false
+alert( Boolean("hello") ); // true
+alert( Boolean("") ); // false
+}
+
+function day3() {
+
+}
 
