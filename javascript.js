@@ -57,7 +57,9 @@ alert( Boolean("") ); // false
 
 function hour3() {
 let x = 3;
+let y = 10;
 x = -x;
 alert(x);
+alert(y - x);
 }
 
