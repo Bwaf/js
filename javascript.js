@@ -141,5 +141,18 @@ function hour4() {
     alert('Z' > 'A');//True
     alert('Glow' > 'Glee');//True
     alert('Bee' > 'Be');//Truee
+
+    alert('2' > 1);//'2' becomes a number
+    alert('01' > 1);//'01' becomes 1
+
+    alert(true == 1);
+    alert(false == 0);
+    let a = 0;
+    alert( Boolean(a) );// false
+
+    let b = "0";
+    alert( Boolean(b) );// true
+
+    alert(a == b);//true
 }
 
