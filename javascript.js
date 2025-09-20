@@ -154,5 +154,20 @@ function hour4() {
     alert( Boolean(b) );// true
 
     alert(a == b);//true
+
+    alert(0 == false);
+    alert('' == false);
+
+    alert(0 === false);//False
+    alert(null === undefined);//false
+    alert(null == undefined);//true
+
+    alert(null > 0);
+    alert(null == 0);
+    alert(null >= 0);
+
+    let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+
+    if (year == 2015) alert('You are right');
 }
 
