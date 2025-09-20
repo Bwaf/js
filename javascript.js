@@ -148,7 +148,7 @@ function hour4() {
     alert(true == 1);
     alert(false == 0);
     let a = 0;
-    alert( Boolean(a) );// false
+    alert( Boolean(a) );//false
 
     let b = "0";
     alert( Boolean(b) );// true
