@@ -148,10 +148,10 @@ function hour4() {
     alert(true == 1);
     alert(false == 0);
     let a = 0;
-    alert( Boolean(a) );//false
+    alert(Boolean(a));//false
 
     let b = "0";
-    alert( Boolean(b) );// true
+    alert(Boolean(b));// true
 
     alert(a == b);//true
 
@@ -166,8 +166,14 @@ function hour4() {
     alert(null == 0);
     alert(null >= 0);
 
-    let year = prompt('In which year was ECMAScript-2015 specification published?', '');
+    let year = prompt('In which year was the ECMAScript-2015 specification published?', '');
 
-    if (year == 2015) alert('You are right');
+    if (year < 2015) {
+        alert('Too early...');
+    } else if (year > 2015) {
+        alert('Too late');
+    } else {
+        alert('Exactly!');
+    }
 }
 
