@@ -179,6 +179,7 @@ function hour4() {
 
 function hour5() {
     let message;
+    let login = prompt('Whats your login?' 'username');
 
     if (login == 'Employee') {
         message = 'Hello';
