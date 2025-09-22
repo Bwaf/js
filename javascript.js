@@ -201,5 +201,11 @@ function hour5() {
     alert(null || 0 || 1); //1
 
     alert(undefined || null || 0); //0
+
+    let firstName = "";
+    let lastName = "";
+    let nickName = "SuperCoder";
+
+    alert(firstName || lastName || nickName || "Anonymous"); // SuperCoder
 }
 
