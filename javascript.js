@@ -178,18 +178,15 @@ function hour4() {
 }
 
 function hour5() {
-    let message;
-    let login = prompt('Whats your login?', 'username');
+    result a || b;
 
-    if (login == 'Employee') {
-        message = 'Hello';
-    } else if (login == 'Director') {
-        message = 'Greetings';
-    } else if (login == '') {
-        message = 'No login';
-    } else {
-        message = '';
+    alert(true || true);   // true
+    alert(false || true);  // true
+    alert(true || false);  // true
+    alert(false || false); // false
+
+    if(1 || 0) {
+        alert("True");
     }
-    alert(message);
 }
 
