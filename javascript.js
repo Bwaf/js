@@ -207,5 +207,10 @@ function hour5() {
     let nickName = "SuperCoder";
 
     alert(firstName || lastName || nickName || "Anonymous"); // SuperCoder
+
+    alert(true && true);   // true
+    alert(false && true);  // false
+    alert(true && false);  // false
+    alert(false && false); // false
 }
 
