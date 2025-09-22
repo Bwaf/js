@@ -190,5 +190,6 @@ function hour5() {
     } else {
         message = '';
     }
+    alert(message);
 }
 
