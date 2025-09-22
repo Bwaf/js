@@ -178,7 +178,7 @@ function hour4() {
 }
 
 function hour5() {
-    
+
     alert(true || true);   // true
     alert(false || true);  // true
     alert(true || false);  // true
@@ -188,10 +188,13 @@ function hour5() {
         alert("True");
     }
 
-    let hour = 9;
+    let hour = 12;
+    let isWeekend = true;
 
-    if (hour < 10 || hour > 18) {
-        alert('The office is closed.');
+    if (hour < 10 || hour > 18 || isWeekend) {
+        alert('The office is closed');
+    } else if {
+        alert('The office is open');
     }
 }
 
