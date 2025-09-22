@@ -178,15 +178,20 @@ function hour4() {
 }
 
 function hour5() {
-    result a || b;
-
+    
     alert(true || true);   // true
     alert(false || true);  // true
     alert(true || false);  // true
     alert(false || false); // false
 
-    if(1 || 0) {
+    if (1 || 0) {
         alert("True");
+    }
+
+    let hour = 9;
+
+    if (hour < 10 || hour > 18) {
+        alert('The office is closed.');
     }
 }
 
