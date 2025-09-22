@@ -193,8 +193,13 @@ function hour5() {
 
     if (hour < 10 || hour > 18 || isWeekend) {
         alert('The office is closed');
-    } else if {
-        alert('The office is open');
     }
+
+    alert(1 || 0); //1
+
+    alert(null || 1); //1
+    alert(null || 0 || 1); //1
+
+    alert(undefined || null || 0); //0
 }
 
