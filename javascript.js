@@ -215,6 +215,31 @@ function hour5() {
 }
 
 function hour6() {
+    result = (a !== null && a !== undefined) ? a : b;
+    //common use for ?? is to provide a default value
+    //for example, here we show user if it's value isn't null/unedified, otherwise Anonomous
+
+    let user;
+
+    alert(user ?? "Anonymous");
+    user = "user";
+    alert(user ?? "Anonymous");//john (user is not null/undefined)
+
+    let firstName = null;
+    let lastName = null;
+    let nickName = "superCoder";
     
+    //shows first defined value:
+    alert(firstName ?? lastName ?? nickName ?? "Anonymous");//superCoder
+    alert(firstName || lastName || nickName || "Anonymous");//superCoder (shows first true value)
+
+    let height = 0;
+    let width = 0;
+
+    alert(height || 100); //100
+    alert(height ?? 100); //100
+
+    height = null;
+    width = null;
 }
 
