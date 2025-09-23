@@ -249,5 +249,14 @@ function hour6() {
 
     let x = (1 && 2) ?? 3;//this works
     alert(x);
+
+    //for of, and for in
+
+    let i = 0
+
+    while (i < 3) { //shows 0, then 1, then 2
+        alert(i);
+        1++;
+    }
 }
 
