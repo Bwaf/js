@@ -261,7 +261,7 @@ function hour6() {
 }
 
 function hourSixForLoops() {
-    let i = 0;
+    let i = 0;//cookies
 
     while (i < 3) {
         alert(i);
