@@ -252,11 +252,15 @@ function hour6() {
 
     //for of, and for in
 
-    let i = 0
+    let i = 0;
 
     while (i < 3) { //shows 0, then 1, then 2
         alert(i);
         i++;
     }
+}
+
+function hourSixForLoops() {
+    
 }
 
