@@ -268,8 +268,10 @@ function hourSixForLoops() {
     // }
 
     let i = 3;
-    while (i) {
-        alert(i);
-        i--;
-    }
+    // while (i) {
+    //     alert(i);
+    //     i--;
+    // }
+
+    while (i) alert(i--);
 }
