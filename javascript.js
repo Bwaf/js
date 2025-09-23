@@ -214,3 +214,7 @@ function hour5() {
     alert(false && false); // false
 }
 
+function hour6() {
+    
+}
+
