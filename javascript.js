@@ -241,5 +241,13 @@ function hour6() {
 
     height = null;
     width = null;
+
+    let area = (height ?? 100) * (width ?? 50);
+    alert(area);//5000
+
+    //let x = 1 && 2 ?? 3;//syntax erro
+
+    let x = (1 && 2) ?? 3;//this works
+    alert(x);
 }
 
