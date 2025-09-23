@@ -261,6 +261,11 @@ function hour6() {
 }
 
 function hourSixForLoops() {
-    
+    let i = 0;
+
+    while (i < 3) {
+        alert(i);
+        i++;
+    }
 }
 
