@@ -261,9 +261,15 @@ function hour6() {
 }
 
 function hourSixForLoops() {
-    let i = 0;
-    while (i < 3) { // shows 0, then 1, then 2
+    // let i = 0;
+    // while (i < 3) { // shows 0, then 1, then 2
+    //     alert(i);
+    //     i++;
+    // }
+
+    let i = 3;
+    while (i) {
         alert(i);
-        i++;
+        i--;
     }
 }
