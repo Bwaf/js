@@ -273,5 +273,9 @@ function hourSixForLoops() {
     //     i--;
     // }
 
-    while (i) alert(i--);
+    // while (i) alert(i--);
+    do {
+        alert(i);
+        i++;
+    } while (i < 5);
 }
