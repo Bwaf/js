@@ -287,4 +287,5 @@ function hour7() {
     for (let i = 0; i < 3; i++) {
         alert(i);
     }
+    alert(i);//3, since i isn't set in the for loop
 }
