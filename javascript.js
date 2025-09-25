@@ -273,9 +273,14 @@ function hourSixForLoops() {
     //     i--;
     // }
 
-    // while (i) alert(i--);
+    while (i) alert(i--);
+}
+
+function hour7() {
+    let i = 0
+
     do {
         alert(i);
         i++;
-    } while (i < 5);
+    } while (i < 3);
 }
