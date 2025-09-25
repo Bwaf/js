@@ -284,14 +284,29 @@ function hour7() {
     //     i++;
     // } while (i < 3);
 
-    for (let i = 0; i < 3; i++) {
-        alert(i);
-    }
-    alert(i);//3, since i isn't set in the for loop
+    // for (let i = 0; i < 3; i++) {
+    //     alert(i);
+    // }
+    // alert(i);//3, since i isn't set in the for loop
 
-    for (; ;) {
-        // repeats without limits
+    // for (; ;) {
+    //     // repeats without limits
+    // }
+
+    outer: for (let i = 0; i < 3; i++) {
+
+        for (let j = 0; j < 3; j++) {
+
+            let input = prompt(`Value at coords (${i},${j})`, '');
+
+            // if an empty string or canceled, then break out of both loops
+            if (!input) break outer; // (*)
+
+            // do something with the value...
+        }
     }
+
+    alert('Done!');
 
 }
 
@@ -299,11 +314,11 @@ let sum = 0;
 
 while (true) {
 
-  let value = +prompt("Enter a number", '');
+    let value = +prompt("Enter a number", '');
 
-  if (!value) break; // (*)
+    if (!value) break; // (*)
 
-  sum += value;
+    sum += value;
 
 }
-alert( 'Sum: ' + sum );
+alert('Sum: ' + sum);
