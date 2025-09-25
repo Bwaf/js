@@ -288,4 +288,21 @@ function hour7() {
         alert(i);
     }
     alert(i);//3, since i isn't set in the for loop
+
+    for (; ;) {
+        // repeats without limits
+    }
+
+    let sum = 0;
+
+    while (true) {
+
+        let value = +prompt("Enter a number", '');
+
+        if (!value) break; // (*)
+
+        sum += value;
+
+    }
+    alert('Sum: ' + sum);
 }
