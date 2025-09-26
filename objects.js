@@ -1,3 +1,4 @@
+//hour 8 ---------
 let user = new Object(); //object constructer syntax
 let user = {}; //"object literal" syntax
 

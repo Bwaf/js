@@ -338,6 +338,8 @@ while (true) {
 }
 alert('Sum: ' + sum);
 
+
+//hour 8 -------
 let monkeyFinder = "worst thing ever";
 
 function funny() {
