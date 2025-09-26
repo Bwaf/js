@@ -24,3 +24,15 @@ function makeUser(name, age) {
         age //same as age: age
     };
 }
+
+let player = {name: "John", age: 30};
+
+alert("age" in user); //true user.age exists
+alert("blabla" in user); //false user.blabla does not exist
+
+let obj = {
+    test: undefined
+};
+
+alert(obj.test); //its undefined
+alert("test" in obj);//true, the property exists
