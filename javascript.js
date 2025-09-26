@@ -359,7 +359,7 @@ function checkAge(age) {
     }
 }
 
-let sayHi = function() {
+let sayHi = function () {
     alert("hello");
 };
 
@@ -367,3 +367,19 @@ function hunter() {
     alert("Cat");
 }
 alert(hunter); //shows the functions code
+
+function ask(question, yes, no) {
+    if (confirm(question)) yes()
+    else no();
+}
+
+function showOk() {
+    alert("You agreed.");
+}
+
+function showCancel() {
+    alert("You canceled the execution.");
+}
+
+// usage: functions showOk, showCancel are passed as arguments to ask
+ask("Do you agree?", showOk, showCancel);
