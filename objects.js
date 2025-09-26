@@ -17,3 +17,10 @@ user.isAdmin = true;
 let key = prompt("What do you want to know about the user?", "name");
 //yes
 alert(uesr[key]); //John (if enter "name")
+
+function makeUser(name, age) {
+    return {
+        name,
+        age
+    };
+}
