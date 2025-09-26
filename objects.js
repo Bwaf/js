@@ -25,7 +25,7 @@ function makeUser(name, age) {
     };
 }
 
-let player = {name: "John", age: 30};
+let player = { name: "John", age: 30 };
 
 alert("age" in user); //true user.age exists
 alert("blabla" in user); //false user.blabla does not exist
@@ -37,7 +37,7 @@ let obj = {
 alert(obj.test); //its undefined
 alert("test" in obj);//true, the property exists
 
-let clone {}; //new object
+let clone { }; //new object
 
 //copying all user properties into it
 for (let key in user) {
@@ -47,3 +47,10 @@ for (let key in user) {
 clone.name = "Pete";
 
 alert(user.name);//still john in the original object
+
+
+user.sayHi = function () {
+    alert("Hello!");
+};
+
+user.sayHi(); // Hello!
