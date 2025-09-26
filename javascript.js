@@ -338,8 +338,15 @@ while (true) {
 }
 alert('Sum: ' + sum);
 
+let monkeyFinder = "worst thing ever";
+
 function funny() {
     let message = "yummy cookies";
     alert(message);
 }
 alert(message);//error, because the variable is local to the function
+
+function stupidMonkey() {
+    alert("screw" + monkeyFinder());
+}
+stupidMonkey();
