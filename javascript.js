@@ -337,3 +337,9 @@ while (true) {
 
 }
 alert('Sum: ' + sum);
+
+function funny() {
+    let message = "yummy cookies";
+    alert(message);
+}
+alert(message);//error, because the variable is local to the function
