@@ -36,3 +36,14 @@ let obj = {
 
 alert(obj.test); //its undefined
 alert("test" in obj);//true, the property exists
+
+let clone {}; //new object
+
+//copying all user properties into it
+for (let key in user) {
+    clone[key] = user[key];
+}
+
+clone.name = "Pete";
+
+alert(user.name);//still john in the original object
