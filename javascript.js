@@ -361,7 +361,7 @@ function checkAge(age) {
 
 let sayHi = function() {
     alert("hello");
-}
+};
 
 function hunter() {
     alert("Cat");
