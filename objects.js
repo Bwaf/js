@@ -11,4 +11,8 @@ alert(user.name);
 alert(user.age);
 
 user.isAdmin = true;
-delete user.age;
+// delete user.age;
+
+let key = prompt("What do you want to know about the user?", "name");
+//yes
+alert(uesr[key]); //John (if enter "name")
