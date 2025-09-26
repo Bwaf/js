@@ -358,3 +358,12 @@ function checkAge(age) {
         return confirm('Did your parents allow you?');
     }
 }
+
+let sayHi = function() {
+    alert("hello");
+}
+
+function hunter() {
+    alert("Cat");
+}
+alert(hunter); //shows the functions code
