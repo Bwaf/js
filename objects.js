@@ -8,3 +8,6 @@ let user = {    //an object
 
 alert(user.name);
 alert(user.age);
+
+user.isAdmin = true;
+delete user.age;
