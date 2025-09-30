@@ -85,3 +85,6 @@ function BigUser() {
 
 alert(new BigUser().name);  // Godzilla, got that object
 
+let user = {}; // a user without "address" property
+
+alert(user.address.street); // Error!
