@@ -25,3 +25,8 @@ let user = {
     }
 
 };
+
+let admin = user;
+user = null; // overwrite to make things obvious
+
+admin.sayHi(); // TypeError: Cannot read property 'name' of null
