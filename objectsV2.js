@@ -88,3 +88,7 @@ alert(new BigUser().name);  // Godzilla, got that object
 let user = {}; // a user without "address" property
 
 alert(user.address.street); // Error!
+
+let user = {}; // user has no address
+
+alert(user.address ? user.address.street ? user.address.street.name : null : null);
