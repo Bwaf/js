@@ -53,7 +53,16 @@ admin.f(); // Admin  (this == admin)
 
 admin['f'](); // Admin (dot or square brackets access the method – doesn't matter)
 
+function makeUser() {
+  return {
+    name: "John",
+    ref: this
+  };
+}
 
+let user = makeUser();
+
+alert( user.ref.name ); // What's the result?
 
 
 
