@@ -76,5 +76,12 @@ function User(name) {
 let john = User("John"); // redirects call to new User
 alert(john.name); // John
 
+function BigUser() {
 
+    this.name = "John";
+
+    return { name: "Godzilla" };  // <-- returns this object
+}
+
+alert(new BigUser().name);  // Godzilla, got that object
 
