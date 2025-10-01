@@ -13,3 +13,7 @@ let html = document.querySelector('.elem') ? document.querySelector('.elem').inn
 alert(user.address ? user.address.street ? user.address.street.name : null : null);
 
 alert( user.address && user.address.street && user.address.street.name ); // undefined (no error)
+
+alert( user?.address?.street ); // undefined (no error)
+html = document.querySelector('.elem')?.innerHTML; // will be undefined, if there's no element
+
