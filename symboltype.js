@@ -11,7 +11,7 @@ alert(id.toString()); //symbol ID now works
 alert(id.description); // id
 
 let user = { //belongs to another code
-    name : "John"
+    name: "John"
     [id]: 123
 };
 user[id] = 1;
@@ -26,4 +26,27 @@ user.id = "Their value";
 
 for (let key user) alert(key);//name age (no symbol)
 
-alert("Direct: " + user[id]); //Direct: 123
+    alert("Direct: " + user[id]); //Direct: 123
+
+let clone = Object.assign({}, user);
+alert(clone[id]);
+
+let idAgain = Symbol.for("id");
+
+alert(id === idAgain);
+
+// get symbol by name
+let sym = Symbol.for("name");
+let sym2 = Symbol.for("id");
+
+// get name by symbol
+alert(Symbol.keyFor(sym)); // name
+alert(Symbol.keyFor(sym2)); // id
+
+let globalSymbol = Symbol.for("name");
+let localSymbol = Symbol("name");
+
+alert(Symbol.keyFor(globalSymbol)); // name, global symbol
+alert(Symbol.keyFor(localSymbol)); // undefined, not global
+
+alert(localSymbol.description); // name
