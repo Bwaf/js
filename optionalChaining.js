@@ -9,3 +9,5 @@ alert(user.address.street); // causes an error
 alert(user.address ? user.address.street : undefined);
 
 let html = document.querySelector('.elem') ? document.querySelector('.elem').innerHTML : null;
+
+alert(user.address ? user.address.street ? user.address.street.name : null : null);
