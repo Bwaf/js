@@ -11,3 +11,5 @@ alert(user.address ? user.address.street : undefined);
 let html = document.querySelector('.elem') ? document.querySelector('.elem').innerHTML : null;
 
 alert(user.address ? user.address.street ? user.address.street.name : null : null);
+
+alert( user.address && user.address.street && user.address.street.name ); // undefined (no error)
