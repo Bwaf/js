@@ -23,6 +23,6 @@ let user = {
         return this.money;
     }
 };
-alert(user);
-alert(+user);
-alert(user + 500);
+alert(user); //toString name:john
+alert(+user); //valueOf 1000
+alert(user + 500); //money goes up by 500
