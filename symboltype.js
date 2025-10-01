@@ -1,4 +1,5 @@
 //hour 10
+'use strict'
 
 let id = Symbol("id");
 
