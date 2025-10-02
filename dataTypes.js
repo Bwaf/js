@@ -28,3 +28,7 @@ if (zero) { // zero is true, because it's an object
 let num = Number("123"); // convert a string to number
 
 alert(null.test); // error
+
+str.test = 5;
+
+alert(str.test);
