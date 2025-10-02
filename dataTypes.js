@@ -34,3 +34,9 @@ alert(null.test); // error
 str.test = 5;
 
 alert(str.test);
+
+let billion = 1000000000;
+
+// We also can use underscore _ as the separator:
+
+// let billion = 1_000_000_000;
