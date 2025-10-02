@@ -153,3 +153,5 @@ function sumSalaries(department) {
         return sum;
     }
 }
+
+alert(sumSalaries(company)); // 7700
