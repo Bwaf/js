@@ -6,3 +6,7 @@ let john = {
 };
 
 john.sayHi(); // Hi buddy!
+
+let str = "Hello";
+
+alert(str.toUpperCase()); // HELLO
