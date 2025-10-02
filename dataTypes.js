@@ -166,4 +166,4 @@ function showName(firstName, lastName, ...titles) {
     alert(titles.length); // 2
 }
 
-showName("Julius", "Caesar", "Consul", "Imperator");
+showName("Julius", "Caesar", "Consul", "Imperator");//k
