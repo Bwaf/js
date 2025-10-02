@@ -1,3 +1,5 @@
+// HOUR 11
+
 let john = {
     name: "John",
     sayHi: function () {
