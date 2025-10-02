@@ -66,3 +66,27 @@ let a = 0b11111111; // binary form of 255
 let b = 0o377; // octal form of 255
 
 alert(a == b); // true, the same number 255 at both sides
+
+//strings
+
+let single = 'single-quoted';
+let double = "double-quoted";
+
+let backticks = `backticks`;
+
+function sum(a, b) {
+    return a + b;
+}
+
+alert(`1 + 2 = ${sum(1, 2)}.`); // 1 + 2 = 3.
+
+let guestList = `Guests:
+ * John
+ * Pete
+ * Mary
+`;
+
+alert(guestList); // a list of guests, multiple lines
+
+// let guestList = "Guests: // Error: Unexpected token ILLEGAL
+//   * John";
