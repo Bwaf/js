@@ -98,3 +98,20 @@ let str2 = `Hello
 World`;
 
 alert(str1 == str2); // true
+
+pow(2, 2) = 4
+pow(2, 3) = 8
+pow(2, 4) = 16
+
+function pow(x, n) {
+    let result = 1;
+
+    // multiply result by x n times in the loop
+    for (let i = 0; i < n; i++) {
+        result *= x;
+    }
+
+    return result;
+}
+
+alert(pow(2, 3)); // 8
