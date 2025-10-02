@@ -44,3 +44,6 @@ alert(str.test);
 let billion = 1e9;  // 1 billion, literally: 1 and 9 zeroes
 
 alert(7.3e9);  // 7.3 billions (same as 7300000000 or 7_300_000_000)
+
+1e3 === 1 * 1000; // e3 means *1000
+1.23e6 === 1.23 * 1000000; // e6 means *1000000
