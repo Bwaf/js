@@ -125,3 +125,13 @@ let filteredArr = arr.filter(item => item >= 10);
 
 // filteredArr is not PowerArray, but Array
 alert(filteredArr.isEmpty()); // Error: filteredArr.isEmpty is not a function
+
+
+//instance of
+//syntax is obj instanceof Class
+
+// class Rabbit {}
+// let rabbit = new Rabbit();
+
+// // is it an object of Rabbit class?
+// alert( rabbit instanceof Rabbit ); // true
