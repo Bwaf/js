@@ -385,3 +385,20 @@ function showCancel() {
 
 // usage: functions showOk, showCancel are passed as arguments to ask
 ask("Do you agree?", showOk, showCancel);
+
+class Animal {
+    constructor(name) {
+        this.speed = 0;
+        this.name = name;
+    }
+    run(speed) {
+        this.speed = speed;
+        alert(`${this.name} runs with speed ${this.speed}.`);
+    }
+    stop() {
+        this.speed = 0;
+        alert(`${this.name} stands still.`);
+    }
+}
+
+let animal = new Animal("My animal");
