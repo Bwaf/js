@@ -4,7 +4,9 @@ try {
     alert('Start of try runs');  // (1) <--
     //no errors
     alert('End of try runs');   // (2) <--
+
+    monkeymonkey;//error, variable not defined
 } catch (err) {
     //error handling
-    alert('Catch is ignored, because there are no errors'); // (3)
+    alert('Error has occurred!'); // (3)
 }
