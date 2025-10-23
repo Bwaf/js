@@ -73,3 +73,6 @@ rabbits.sort(Rabbit.compare);
 rabbits[0].run(); // Black Rabbit runs with speed 5.
 
 alert(Rabbit.planet); // Earth
+
+
+// private and protected properites methods
