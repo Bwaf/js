@@ -16,6 +16,11 @@ class Article {
         this.date = date;
     }
 
+    static createTodays() {
+        // remember, this = Article
+        return new this("Today's digest", new Date());
+    }
+
     static compare(articleA, articleB) {
         return articleA.date - articleB.date;
     }
