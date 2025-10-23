@@ -36,7 +36,7 @@ try {
 
 } catch (err) {
     // ...the execution jumps here
-    alert("Our apologies, the data has errors, we'll try to request it one more time.");
+    alert("An error occurred");
     alert(err.name);
     alert(err.message);
 }
