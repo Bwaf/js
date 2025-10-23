@@ -102,3 +102,6 @@ let coffeeMachine = new CoffeeMachine(100);
 
 // add water
 coffeeMachine.waterAmount = -10; // _waterAmount will become 0, not -10
+
+
+//Extending built in classes
