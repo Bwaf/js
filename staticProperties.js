@@ -141,3 +141,10 @@ alert(filteredArr.isEmpty()); // Error: filteredArr.isEmpty is not a function
 
 // // is it an object of Rabbit class?
 // alert( rabbit instanceof Rabbit ); // true
+
+// toStringTag for the environment-specific object and class:
+alert(window[Symbol.toStringTag]); // Window
+alert(XMLHttpRequest.prototype[Symbol.toStringTag]); // XMLHttpRequest
+
+alert({}.toString.call(window)); // [object Window]
+alert({}.toString.call(new XMLHttpRequest())); // [object XMLHttpRequest]
