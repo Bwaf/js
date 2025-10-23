@@ -1,4 +1,4 @@
-//try catch syntax
+//try-catch syntax
 try {
     //code
     alert('Start of try runs');  // (1) <--
