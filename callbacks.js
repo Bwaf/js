@@ -9,3 +9,27 @@ loadScript('https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js', s
     alert(`Cool, the script ${script.src} is loaded`);
     alert(_); // _ is a function declared in the loaded script
 });
+
+loadScript('1.js', function (error, script) {
+
+    if (error) {
+        handleError(error);
+    } else {
+        // ...
+        loadScript('2.js', function (error, script) {
+            if (error) {
+                handleError(error);
+            } else {
+                // ...
+                loadScript('3.js', function (error, script) {
+                    if (error) {
+                        handleError(error);
+                    } else {
+                        // ...continue after all scripts are loaded (*)
+                    }
+                });
+
+            }
+        });
+    }
+});
