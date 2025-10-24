@@ -83,7 +83,6 @@ promise.then(
 
 promise.then(script => alert('Another handler...'));
 
-
 //promise chaining
 
 new Promise(function (resolve, reject) {
@@ -106,3 +105,4 @@ new Promise(function (resolve, reject) {
     return result * 2;
 
 });
+>>>>>>> 5e850eddca8d506e20d3de7cbe8e25fb5e61aae9
