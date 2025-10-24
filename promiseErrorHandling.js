@@ -93,3 +93,28 @@ Promise.all(requests)
     .then(responses => Promise.all(responses.map(r => r.json())))
     // all JSON answers are parsed: "users" is the array of them
     .then(users => users.forEach(user => alert(user.name)));
+
+
+//promisification
+
+function promisify(f) {
+    return function (...args) { // return a wrapper-function (*)
+        return new Promise((resolve, reject) => {
+            function callback(err, result) { // our custom callback for f (**)
+                if (err) {
+                    reject(err);
+                } else {
+                    resolve(result);
+                }
+            }
+
+            args.push(callback); // append our custom callback to the end of f arguments
+
+            f.call(this, ...args); // call the original function
+        });
+    };
+}
+
+// usage:
+let loadScriptPromise = promisify(loadScript);
+loadScriptPromise(...).then(...);
