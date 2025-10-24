@@ -5,3 +5,6 @@ function loadScript(src) {
   script.src = src;
   document.head.append(script);
 }
+
+// load and execute the script at the given path
+loadScript('/my/script.js');
