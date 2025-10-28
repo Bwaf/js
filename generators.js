@@ -7,3 +7,7 @@ function* generateSequence() {
 // "generator function" creates "generator object"
 let generator = generateSequence();
 alert(generator); // [object Generator]
+
+let one = generator.next();
+
+alert(JSON.stringify(one)); // {value: 1, done: false}
