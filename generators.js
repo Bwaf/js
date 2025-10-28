@@ -11,3 +11,7 @@ alert(generator); // [object Generator]
 let one = generator.next();
 
 alert(JSON.stringify(one)); // {value: 1, done: false}
+
+let two = generator.next();
+
+alert(JSON.stringify(two)); // {value: 2, done: false}
