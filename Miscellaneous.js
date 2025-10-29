@@ -105,3 +105,10 @@ try {
 
 // "ownKeys" filters out _password
 for (let key in user) alert(key); // name
+
+
+//Eval: run a code string
+
+
+let value = eval('1+1');
+alert(value); // 2
