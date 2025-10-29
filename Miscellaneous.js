@@ -22,3 +22,11 @@ numbers = new Proxy(numbers, {
 
 alert(numbers[1]); // 1
 alert(numbers[123]); // 0 (no such item)
+
+let dictionary = {
+    'Hello': 'Hola',
+    'Bye': 'Adiós'
+};
+
+alert(dictionary['Hello']); // Hola
+alert(dictionary['Welcome']); // undefined
