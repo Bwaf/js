@@ -161,9 +161,9 @@ function curry(func) {
 //Reference Type
 
 let user = {
-  name: "John",
-  hi() { alert(this.name); },
-  bye() { alert("Bye"); }
+    name: "John",
+    hi() { alert(this.name); },
+    bye() { alert("Bye"); }
 };
 
 user.hi(); // works
@@ -174,3 +174,9 @@ user.hi(); // works
 
 
 //BigInt
+
+const bigint = 1234567890123456789012345678901234567890n;
+
+const sameBigint = BigInt("1234567890123456789012345678901234567890");
+
+const bigintFromNumber = BigInt(10); // same as 10n
