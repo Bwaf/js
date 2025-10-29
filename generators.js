@@ -43,3 +43,7 @@ alert(generator.next().value); // "2 + 2 = ?"
 alert(generator.next(4).value); // "3 * 3 = ?"
 
 alert(generator.next(9).done); // true
+
+
+//Async iteration and generators
+
