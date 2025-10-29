@@ -203,3 +203,7 @@ alert("\u2191"); // ↑, the arrow up symbol
 
 alert("\u{20331}"); // 佫, a rare Chinese character (long Unicode)
 alert("\u{1F60D}"); // 😍, a smiling face symbol (another long Unicode)
+
+alert('𝒳'.length); // 2, MATHEMATICAL SCRIPT CAPITAL X
+alert('😂'.length); // 2, FACE WITH TEARS OF JOY
+alert('𩷶'.length); // 2, a rare Chinese character
