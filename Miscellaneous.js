@@ -189,3 +189,10 @@ alert(bigint + BigInt(number)); // 3
 
 // bigint to number
 alert(Number(bigint) + number); // 3
+
+
+//unicode, String internals
+
+
+alert( "\x7A" ); // z
+alert( "\xA9" ); // ©, the copyright symbol
