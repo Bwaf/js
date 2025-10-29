@@ -1,21 +1,27 @@
-function* generateSequence() {
-    yield 1;
-    yield 2;
-    return 3;
-}
+let range = {
+    from: 1,
+    to: 5,
 
-// "generator function" creates "generator object"
-let generator = generateSequence();
-alert(generator); // [object Generator]
+    // for..of range calls this method once in the very beginning
+    [Symbol.iterator]() {
+        // ...it returns the iterator object:
+        // onward, for..of works only with that object, asking it for next values
+        return {
+            current: this.from,
+            last: this.to,
 
-let one = generator.next();
+            // next() is called on each iteration by the for..of loop
+            next() {
+                // it should return the value as an object {done:.., value :...}
+                if (this.current <= this.last) {
+                    return { done: false, value: this.current++ };
+                } else {
+                    return { done: true };
+                }
+            }
+        };
+    }
+};
 
-alert(JSON.stringify(one)); // {value: 1, done: false}
-
-let two = generator.next();
-
-alert(JSON.stringify(two)); // {value: 2, done: false}
-
-let three = generator.next();
-
-alert(JSON.stringify(three)); // {value: 3, done: true}
+// iteration over range returns numbers from range.from to range.to
+alert([...range]); // 1,2,3,4,5
