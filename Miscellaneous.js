@@ -112,3 +112,9 @@ for (let key in user) alert(key); // name
 
 let value = eval('1+1');
 alert(value); // 2
+
+let x = 1;
+{
+    let x = 5;
+    window.eval('alert(x)'); // 1 (global variable)
+}
