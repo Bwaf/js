@@ -194,5 +194,9 @@ alert(Number(bigint) + number); // 3
 //unicode, String internals
 
 
-alert( "\x7A" ); // z
-alert( "\xA9" ); // ©, the copyright symbol
+alert("\x7A"); // z
+alert("\xA9"); // ©, the copyright symbol
+
+alert("\u00A9"); // ©, the same as \xA9, using the 4-digit hex notation
+alert("\u044F"); // я, the Cyrillic alphabet letter
+alert("\u2191"); // ↑, the arrow up symbol
