@@ -118,3 +118,6 @@ let x = 1;
     let x = 5;
     window.eval('alert(x)'); // 1 (global variable)
 }
+
+
+//Currying
