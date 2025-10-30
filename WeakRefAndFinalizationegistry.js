@@ -14,18 +14,24 @@ function fetchImg() {
     // abstract function for downloading images...
 }
 
-function weakRefCache(fetchImg) { // (1)
-    const imgCache = new Map(); // (2)
+function weakRefCache(fetchImg) {
+    const imgCache = new Map();
 
-    return (imgName) => { // (3)
-        const cachedImg = imgCache.get(imgName); // (4)
+    const registry = new FinalizationRegistry((imgName) => { // (1)
+        const cachedImg = imgCache.get(imgName);
+        if (cachedImg && !cachedImg.deref()) imgCache.delete(imgName);
+    });
 
-        if (cachedImg?.deref()) { // (5)
+    return (imgName) => {
+        const cachedImg = imgCache.get(imgName);
+
+        if (cachedImg?.deref()) {
             return cachedImg?.deref();
         }
 
-        const newImg = fetchImg(imgName); // (6)
-        imgCache.set(imgName, new WeakRef(newImg)); // (7)
+        const newImg = fetchImg(imgName);
+        imgCache.set(imgName, new WeakRef(newImg));
+        registry.register(newImg, imgName); // (2)
 
         return newImg;
     };
