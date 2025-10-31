@@ -24,3 +24,12 @@ if (confirm("Go to Wikipedia?")) {
 document.body.style.background = 'red'; // make the background red
 
 setTimeout(() => document.body.style.background = '', 3000); // return back 
+
+
+// Node Properties: type, tag and contents
+
+alert(document.body instanceof HTMLBodyElement); // true
+alert(document.body instanceof HTMLElement); // true
+alert(document.body instanceof Element); // true
+alert(document.body instanceof Node); // true
+alert(document.body instanceof EventTarget); // true
