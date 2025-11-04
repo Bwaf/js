@@ -8,6 +8,21 @@
     }
 </style>
 
+<body>
+  <script>
+    // doesn't work!
+    document.body.style.margin = 20;
+    alert(document.body.style.margin); // '' (empty string, the assignment is ignored)
+
+    // now add the CSS unit (px) - and it works
+    document.body.style.margin = '20px';
+    alert(document.body.style.margin); // 20px
+
+    alert(document.body.style.marginTop); // 20px
+    alert(document.body.style.marginLeft); // 20px
+  </script>
+</body>
+
 <script>
     let div = document.createElement('div');
     div.className = "alert";
