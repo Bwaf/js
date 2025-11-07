@@ -121,6 +121,22 @@
     <a href="/" onclick="return false">Click here</a>
     or
     <a href="/" onclick="event.preventDefault()">here</a>
+
+    <p>Right-click here for the document context menu</p>
+    <button id="elem">Right-click here for the button context menu</button>
+
+    <script>
+        elem.oncontextmenu = function (event) {
+            event.preventDefault();
+            alert("Button context menu");
+        };
+
+        document.oncontextmenu = function (event) {
+            event.preventDefault();
+            alert("Document context menu");
+        };
+    </script>
+
 </body>
 
 </html>
