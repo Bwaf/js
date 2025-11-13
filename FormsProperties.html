@@ -1,14 +1,16 @@
-<form name="my">
-  <input name="one" value="1">
-  <input name="two" value="2">
+<form id="form">
+  <input name="login">
 </form>
 
 <script>
-  // get the form
-  let form = document.forms.my; // <form name="my"> element
+  alert(form.elements.login == form.login); // true, the same <input>
 
-  // get the element
-  let elem = form.elements.one; // <input name="one"> element
+  form.login.name = "username"; // change the name of the input
 
-  alert(elem.value); // 1
+  // form.elements updated the name:
+  alert(form.elements.login); // undefined
+  alert(form.elements.username); // input
+
+  // form allows both names: the new one and the old one
+  alert(form.username == form.login); // true
 </script>
