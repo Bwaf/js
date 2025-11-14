@@ -28,3 +28,22 @@ Your email please: <input type="email" id="input">
         }
     };
 </script>
+
+Click the first item and press Tab. Keep track of the order. Please note that many subsequent Tabs can move the focus
+out of the iframe in the example.
+<ul>
+    <li tabindex="1">One</li>
+    <li tabindex="0">Zero</li>
+    <li tabindex="2">Two</li>
+    <li tabindex="-1">Minus one</li>
+</ul>
+
+<style>
+    li {
+        cursor: pointer;
+    }
+
+    :focus {
+        outline: 1px dashed green;
+    }
+</style>
